@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ProjectV4</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_forget_password">Forget password !</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_log_in">Log in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    /**************************************************/
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="category_overview">Overview</string>
+    <string name="category_gender">Gender</string>
+    <string name="category_role">Role</string>
+    <string name="category_measurement">Measurement</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_weight">Weight</string>
+    <string name="hint_height">Height</string>
+    <string name="unit_weight">kg</string>
+    <string name="unit_height">cm</string>
+    <string name="gender_unknown">Unknown</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    /*************************************************/
+    <string name="role_athlete">Athlete</string>
+    <string name="role_coach">Coach</string>
+</resources>

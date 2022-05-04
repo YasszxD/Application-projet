@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_margin"
+        tools:context=".ui.SignupActivity" android:orientation="vertical">
+
+
+    <LinearLayout android:weightSum="3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView
+                android:text="@string/hint_name"
+
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+        <EditText
+
+                android:id="@+id/edit_name"
+                android:hint="@string/prompt_username"
+                android:inputType="textPersonName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout android:weightSum="3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView
+                android:text="@string/prompt_password"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+        <EditText
+
+                android:id="@+id/edit_password"
+                android:hint="@string/prompt_password"
+                android:inputType="textVisiblePassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:weightSum="3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView
+                android:text="@string/hint_age"
+
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+        <EditText
+
+                android:id="@+id/edit_age"
+                android:hint="@string/hint_age"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:maxLength="2"/>
+    </LinearLayout>
+
+ <LinearLayout
+         android:id="@+id/container_gender"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+
+     <TextView
+             android:text="@string/category_gender"
+
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_weight="1"/>
+
+
+     <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_weight="2"
+             android:orientation="vertical">
+
+         <!-- Gender drop-down spinner -->
+         <Spinner
+                 android:id="@+id/spinner_gender"
+                 android:layout_height="48dp"
+                 android:layout_width="wrap_content"
+                 android:paddingRight="16dp"
+                 android:spinnerMode="dropdown"/>
+     </LinearLayout>
+ </LinearLayout>
+    <LinearLayout
+            android:id="@+id/container_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+                android:text="@string/category_role"
+
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+            <!-- Gender drop-down spinner -->
+            <Spinner
+                    android:id="@+id/spinner_role"
+                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout android:weightSum="3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView
+                android:text="@string/hint_weight"
+
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+
+
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <EditText
+
+                    android:id="@+id/edit_weight"
+                    android:hint="@string/hint_weight"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+                    android:maxLength="4"/>
+            <TextView
+                    android:id="@+id/label_weight_units"
+                    android:text="@string/unit_weight"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="4dp"
+                    android:textSize="20sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout android:weightSum="3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView
+                android:text="@string/hint_height"
+
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <EditText
+
+                    android:id="@+id/edit_height"
+                    android:hint="@string/hint_height"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+            />
+            <TextView
+                    android:id="@+id/label_height_units"
+                    android:text="@string/unit_height"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="4dp"
+                    android:textSize="20sp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--
+        <LinearLayout
+                android:id="@+id/container_measurement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <TextView
+                    android:text="@string/category_measurement"
+                    style="@style/CategoryStyle" android:layout_width="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:paddingLeft="4dp"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="4dp">
+
+
+                    <EditText
+                            android:id="@+id/edit_pet_weight"
+                            android:hint="@string/hint_weight"
+                            android:inputType="number"
+                            style="@style/EditorFieldStyle"/>
+
+                    <!- Units for weight (kg) ->
+                    <TextView
+                            android:id="@+id/label_weight_units"
+                            android:text="@string/unit_weight"
+                            style="@style/EditorUnitsStyle"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="4dp">
+
+
+                    <EditText
+                            android:id="@+id/edit_height"
+                            android:hint="@string/hint_height"
+                            android:inputType="number"
+                            style="@style/EditorFieldStyle"/>
+
+
+                    <TextView
+                            android:id="@+id/label_height_units"
+                            android:text="@string/unit_height"
+                            style="@style/EditorUnitsStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>-->
+</LinearLayout>

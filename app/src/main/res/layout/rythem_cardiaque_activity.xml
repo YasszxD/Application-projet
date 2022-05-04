@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:columnCount="2"
+                  android:padding="20dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:background="@drawable/shape"
+            >
+                <TextView android:id="@+id/titre0" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Heart" android:textSize="20sp"
+                          android:textStyle="bold" android:layout_margin="10dp"/>
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:id="@+id/image"
+                           android:src="@drawable/heart"
+                           android:layout_margin="10dp" android:layout_below="@id/titre0"
+                           android:layout_centerHorizontal="true"/>
+                <TextView
+                        android:layout_height="wrap_content" android:layout_width="wrap_content"
+                        android:id="@+id/text_view_progress"
+                        android:textSize="20sp" android:text="0" android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/image"/>
+                <TextView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textSize="20sp" android:text="bmp" android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/text_view_progress" android:layout_below="@id/image"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_height="match_parent" android:layout_marginLeft="20dp"
+                            android:layout_width="0dp" android:layout_weight="1"
+                            android:background="@drawable/shape">
+
+                <com.jjoe64.graphview.GraphView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/graph" tools:ignore="MissingClass"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="20dp">
+
+
+            <LinearLayout android:orientation="vertical" android:layout_width="250dp" android:layout_height="100dp"
+                          android:background="@drawable/shape"
+                          android:gravity="center" android:layout_marginRight="20dp" android:layout_gravity="fill">
+                <Button
+                        android:id="@+id/button_decr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- 1"
+                />
+                <Button
+                        android:id="@+id/button_incr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+ 1"
+                        android:layout_below="@id/button_decr"
+                />
+            </LinearLayout>
+
+            <RelativeLayout android:layout_height="100dp" android:layout_width="100dp"
+                            android:background="@drawable/shape" android:gravity="center">
+
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/good"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:background="@drawable/shape" android:layout_marginTop="20dp" android:padding="20dp" >
+            <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TableRow android:layout_width="wrap_content">
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+
+
+                <TableRow android:layout_width="wrap_content">
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" >
+                    <TextView android:text="21/02/2001" android:textSize="20sp" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="200dp"  android:layout_gravity="center" >
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="AVG" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MIN" />
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MAX" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
