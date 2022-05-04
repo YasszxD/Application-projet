@@ -1,0 +1,37 @@
+com/example/projectv4/data/AppContract.java
+ com.example.projectv4.data.AppContract
+ com.example.projectv4.data.AppContract$Player
+com/example/projectv4/controller/Controller.java
+ com.example.projectv4.controller.Controller
+com/example/projectv4/ui/app/Anim.java
+ com.example.projectv4.ui.app.Anim
+com/example/projectv4/ui/app/Cardiaque.java
+ com.example.projectv4.ui.app.Cardiaque
+ com.example.projectv4.ui.app.Cardiaque$1
+ com.example.projectv4.ui.app.Cardiaque$2
+com/example/projectv4/BuildConfig.java
+ com.example.projectv4.BuildConfig
+com/example/projectv4/ui/app/FragmentPageAdapter.java
+ com.example.projectv4.ui.app.FragmentPageAdapter
+com/example/projectv4/ui/app/AthletesActivity.java
+ com.example.projectv4.ui.app.AthletesActivity
+ com.example.projectv4.ui.app.AthletesActivity$1
+com/example/projectv4/data/PlayerDbHelper.java
+ com.example.projectv4.data.PlayerDbHelper
+com/example/projectv4/ui/app/AthletesAdapter.java
+ com.example.projectv4.ui.app.AthletesAdapter
+com/example/projectv4/ui/SignupActivity.java
+ com.example.projectv4.ui.SignupActivity
+ com.example.projectv4.ui.SignupActivity$1
+ com.example.projectv4.ui.SignupActivity$2
+com/example/projectv4/ui/app/MainActivity.java
+ com.example.projectv4.ui.app.MainActivity
+com/example/projectv4/ui/app/Fragment.java
+ com.example.projectv4.ui.app.Fragment
+com/example/projectv4/ui/LoginActivity.java
+ com.example.projectv4.ui.LoginActivity
+ com.example.projectv4.ui.LoginActivity$1
+ com.example.projectv4.ui.LoginActivity$2
+com/example/projectv4/ui/SplachActivity.java
+ com.example.projectv4.ui.SplachActivity
+ com.example.projectv4.ui.SplachActivity$1
