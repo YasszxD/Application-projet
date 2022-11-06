@@ -1,37 +1,16 @@
-+------------------------------+
-| **RAPPORT DE Projet Fédéré** |
-|                              |
-| contrôle des Athlètes        |
-+------------------------------+
 
-  --
-  --
+# **RAPPORT DE Projet **
 
-  --
-  --
 
-> **I- Équipe du projet**
 
-+---------------------+----------------------+----------------------+
-| > **Nom -- Prénom** | > **Rôle projet**    |  **E-mail de        |
-|                     |                      |  contact**          |
-+=====================+======================+======================+
-| > Yassine Abdelhedi | > Scrum Master       |  Yassinea           |
-|                     |                      | bdelhedi16@gmail.co |
-|                     |                      |  m                  |
-+---------------------+----------------------+----------------------+
-| > Chiheb Ben othmen | > Membre of Scrum    |  Benot              |
-|                     | > Team               | hmenchiheb2000@gmai |
-|                     |                      |  l.com              |
-+---------------------+----------------------+----------------------+
-| > Ghofrane Hamdi    | > Membre of Scrum    |  Ghofran            |
-|                     | > Team               | ghofran109@gmail.co |
-|                     |                      |m                  |
-+---------------------+----------------------+----------------------+
-| > Nidhal Mbarki     | > Membre of Scrum    |  elmba              |
-|                     | > Team               | rkinidhal@gmail.com |
-+---------------------+----------------------+----------------------+
-| > Souhaib Touil     | > Membre of Scrum    |  Soha               |
-|                     | > Team               | ibtouil.2@gmail.com |
-+---------------------+----------------------+----------------------+
 
+
+## **I- Équipe du projet**
+
+|  **Nom -- Prénom** |  **Rôle projet**    |  **E-mail de contact**  |
+|--------------|-----------|------------|
+|  Yassine Abdelhedi | Scrum Master          |  Yassineabdelhedi16@gmail.com |
+|  Chiheb Ben othmen | Membre of Scrum Team  |  Benothmenchiheb2000@gmail.com  |
+|  Ghofrane Hamdi    | Membre of Scrum Team  |  Ghofranghofran109@gmail.com  |
+|  Nidhal Mbarki     | Membre of Scrum Team  |  elmbarkinidhal@gmail.com |
+|  Souhaib Touil     | Membre of Scrum Team  |  Sohaibtouil.2@gmail.com |
